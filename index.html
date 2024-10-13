@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi Portafolo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2 class="nav-title">Mi Portafolio</h2>
+            <ul class="nav-links">
+                <li><a href="#aboutMe">Acerca de mi</a></li>
+                <li><a href="#Proyects">Proyectos</a></li>
+                <li><a id="ContactOpen" href="#">Contacto</a></li>
+        </nav>
+        <div class="content-title">
+            <h1>¡Hola! Soy <span id="name" class="name">Alonso</span></h1>
+            <p>Desarrollador Web</p>
+        </div>
+    </header>
+    <main>
+        <article id="aboutMe" class="main-article">
+            <section class="AboutMe-section-1">
+                <h2>Acerca de mi</h2>
+                <p>¡Hola! Soy Alonso, un desarrollador web autodidacta. Me encanta aprender cosas nuevas y siempre estoy
+                    buscando mejorar mis habilidades</p>
+            </section>
+            <section class="AboutMe-section-2">
+                <img src="img/Perfil.jpg" alt="Perfil">
+            </section>
+        </article>
+        <article id="Demos" class="main-article">
+            <h2>Demos</h2>
+                <div class="projects">
+                    <div class="project">
+                        <img src="img/Demo1.png" alt="Demo-1">
+                        <h3>PlushStar</h3>
+                        <p>Modelo de tienda</p>
+                        <a target="_blank" href="https://asesinoar111.github.io/Demo-1/">Link</a>
+                    </div>
+                    <div class="project">
+                        <img src="img/Demo2.png" alt="Demo-2">
+                        <h3>Abstract</h3>
+                        <p>Atencion al Cliente</p>
+                        <a target="_blank" href="https://asesinoar111.github.io/Demo-3/">Link</a>
+                    </div>
+                    <div class="project">
+                        <img src="img/Demo3.png" alt="Demo-3">
+                        <h3>EasyBay</h3>
+                        <p>Tienda de plantas</p>
+                        <a target="_blank" href="https://asesinoar111.github.io/Demo-2/">Link</a>
+                    </div>
+                </div>
+        </article>
+        <article id="Juegos" class="main-article">
+            <h2>Juegos</h2>
+                <div class="projects">
+                    <div class="project">
+                        <img src="img/Juego1.png" alt="Juego-1">
+                        <h3>Juego Gato 1</h3>
+                        <p>Juego javascript Gato 1</p>
+                        <a target="_blank" href="https://asesinoar111.github.io/Juego-1/">Link</a>
+                    </div>
+                    <div class="project">
+                        <img src="img/Juego-3.png" alt="Juego-2">
+                        <h3>Juego 2</h3>
+                        <p>Descripción del juego 2</p>
+                        <a target="_blank" href="https://asesinoar111.github.io/Juego-3/">Link</a>
+                    </div>
+                </div>
+        </article>
+        <article id="Contact">
+            <span id="ContactClose"></span>
+            <form action="contact.php" method="post">
+                <h2>Contacto</h2>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <button id="submit" type="submit">Enviar</button>
+            </form>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
